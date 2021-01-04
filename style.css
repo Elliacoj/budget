@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Arial Black", sans-serif;
+    width: 100%;
+    font-size: 2.5rem;
+    background-color: darkgrey;
+}
+
+#container {
+    width: 90%;
+    margin: 3% auto 3% auto;
+    border: 5px solid black;
+    background-color: white;
+}
+
+h1 {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    background-color: #e2e1e1;
+}
+
+#partOne, #partTwo, #partThree, #partFour {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#partTwo, #partThree, #partFour {
+    border-top: 2px solid black;
+    margin-top: 2%;
+}
+
+h2, h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.space {
+    width: 100%;
+    position: relative;
+    margin-top: 3%;
+}
+
+label {
+    padding-left: 10%;
+}
+
+input {
+    width: 20%;
+    height: 30px;
+    position: absolute;
+    right: 13%;
+    bottom: 0.5%;
+    text-align: right;
+    padding-right: 1%;
+    font-size: 1.5rem;
+}
+
+p {
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+}
+
+.titleLine {
+    text-decoration-line: overline;
+    margin-top: 5%;
+}
+
+button {
+    padding: 1%;
+    font-weight: bold;
+    border-radius: 30%;
+}
+
+.add {
+    position: absolute;
+    right: 5%;
+    bottom: 0.5%;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#reset {
+    margin-left: 3%;
+}
