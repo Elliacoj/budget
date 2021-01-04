@@ -18,61 +18,61 @@
 
             <div class="space">
                 <label for="rent">Loyer et charges:</label>
-                <input type="text" id="rent" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="rent" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="refund">Remboursement de crédits:</label>
-                <input type="text" id="refund" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="refund" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="water">Eau/Electricité/Gaz:</label>
-                <input type="text" id="water" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="water" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="internet">Téléphone - internet:</label>
-                <input type="text" id="internet" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="internet" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="insuranceH">Assurance habitation:</label>
-                <input type="text" id="insuranceH" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="insuranceH" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="insuranceC">Assurance véhicules:</label>
-                <input type="text" id="insuranceC" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="insuranceC" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="mutuelle">Mutuelle santé:</label>
-                <input type="text" id="mutuelle" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="mutuelle" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="charges">Frais de garde:</label>
-                <input type="text" id="charges" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="charges" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="impotR">Impôts sur le revenu:</label>
-                <input type="text" id="impotR" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="impotR" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="impotL">Impôts locaux:</label>
-                <input type="text" id="impotL" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="impotL" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
@@ -80,13 +80,13 @@
 
             <div class="space">
                 <label for="purchase">Achats:</label>
-                <input type="text" id="purchase" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="purchase" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="chargesGas">Essence/frais de transport en commun:</label>
-                <input type="text" id="chargesGas" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="chargesGas" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
@@ -94,16 +94,16 @@
 
             <div class="space">
                 <label for="outing">Sorties:</label>
-                <input type="text" id="outing" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="spent" type="text" id="outing" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <h3 class="titleLine">Autres dépenses:</h3>
 
-            <div class="space">
+            <div id="spaceAddD" class="space">
                 <label for="labelNewD">Label pour autres dépenses:</label>
                 <input type="text" id="labelNewD">
-                <button class="add">Ajouter</button>
+                <button id="addD" class="add">Ajouter</button>
             </div>
         </div>
 
@@ -112,26 +112,26 @@
 
             <div class="space">
                 <label for="salary">Salaire:</label>
-                <input type="text" id="salary" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="income" type="text" id="salary" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="help">Aides:</label>
-                <input type="text" id="help" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="income" type="text" id="help" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
             <div class="space">
                 <label for="rentes">Rentes:</label>
-                <input type="text" id="rentes" pattern="[0-9]{0,}.[0-9]{2}">
+                <input class="income" type="text" id="rentes" pattern="[0-9]{0,}.[0-9]{2}" placeholder="0.00">
                 <p>€</p>
             </div>
 
-            <div class="space">
+            <div id="spaceAddR" class="space">
                 <label for="labelNewR">Label pour autres dépenses:</label>
                 <input type="text" id="labelNewR">
-                <button class="add">Ajouter</button>
+                <button id="addR" class="add">Ajouter</button>
             </div>
         </div>
 
