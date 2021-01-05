@@ -99,7 +99,6 @@ function result() {
     }
 
     for(let x = 0; x < arrayIncome.length; x++) {
-        console.log(parseFloat(arrayIncome[x].value))
         if(((isNaN(arrayIncome[x].value) === true) && (arrayIncome[x].value.length > 0))) {
             alert("Un champ n'est pas valide");
         }
@@ -120,7 +119,6 @@ function result() {
 document.getElementById("reset").addEventListener("click", function () {
     for(let x = 0; x < arraySpent.length; x++) {
         arraySpent[x].value = "";
-        console.log(arraySpent[x].value)
     }
 
     for(let x = 0; x < arrayIncome.length; x++) {
