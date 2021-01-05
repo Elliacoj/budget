@@ -47,6 +47,13 @@ function added(place, field, add, array) {
     document.getElementById("reset").addEventListener("click", function () {
         for(let x = 0; x < document.getElementsByClassName("addSpace").length; x++){
             document.getElementsByClassName("addSpace")[x].remove();
+            for(let x = 0; x < arraySpent.length; x++) {
+                arraySpent[x].value = "";
+            }
+
+            for(let x = 0; x < arrayIncome.length; x++) {
+                arrayIncome[x].value = "";
+            }
         }
     });
 }
@@ -74,12 +81,37 @@ function result() {
     total.innerHTML = "";
     for(let x = 0; x < arraySpent.length; x++) {
         console.log(parseFloat(arraySpent[x].value))
-        if(((isNaN(arraySpent[x].value) === true) && (arraySpent[x].length > 0))) {
+        if(((isNaN(arraySpent[x].value) === true) && (arraySpent[x].value.length > 0))) {
+            alert("Un champ n'est pas valide");
+        }
+        else if((arraySpent[x].value.length > 0) && (((parseFloat(arraySpent[x].value) % 1 === 0)) || ((parseFloat(arraySpent[x].value) * 100) % 1 !== 0))) {
             alert("Un champ n'est pas valide");
         }
 
-        else if((parseFloat(arraySpent[x].value) % 1 !== 0) && (arraySpent[x].length > 0) && ((parseFloat(arraySpent[x].value) * 100) % 1 === 0) && ((parseFloat(arraySpent[x].value) * 10) % 1 !== 0)) {
+        else if((arraySpent[x].value.length > 0) && ((parseFloat(arraySpent[x].value) * 10) % 1 === 0)) {
+            alert("Un champ n'est pas valide");
+        }
+
+        else {
             total.innerHTML -= arraySpent[x].value;
+        }
+    }
+
+    for(let x = 0; x < arrayIncome.length; x++) {
+        console.log(parseFloat(arrayIncome[x].value))
+        if(((isNaN(arrayIncome[x].value) === true) && (arrayIncome[x].value.length > 0))) {
+            alert("Un champ n'est pas valide");
+        }
+        else if((arrayIncome[x].value.length > 0) && (((parseFloat(arrayIncome[x].value) % 1 === 0)) || ((parseFloat(arrayIncome[x].value) * 100) % 1 !== 0))) {
+            alert("Un champ n'est pas valide");
+        }
+
+        else if((arrayIncome[x].value.length > 0) && ((parseFloat(arrayIncome[x].value) * 10) % 1 === 0)) {
+            alert("Un champ n'est pas valide");
+        }
+
+        else {
+            total.innerHTML += arrayIncome[x].value;
         }
     }
 }
