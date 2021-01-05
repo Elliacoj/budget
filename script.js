@@ -47,13 +47,14 @@ function added(place, field, add, array) {
     document.getElementById("reset").addEventListener("click", function () {
         for(let x = 0; x < document.getElementsByClassName("addSpace").length; x++){
             document.getElementsByClassName("addSpace")[x].remove();
-            for(let x = 0; x < arraySpent.length; x++) {
-                arraySpent[x].value = "";
-            }
+        }
+        for(let y = 0; y < arraySpent.length; y++) {
+            arraySpent[y].value = "";
+            console.log(arraySpent[y].value)
+        }
 
-            for(let x = 0; x < arrayIncome.length; x++) {
-                arrayIncome[x].value = "";
-            }
+        for(let x = 0; x < arrayIncome.length; x++) {
+            arrayIncome[x].value = "";
         }
     });
 }
@@ -115,5 +116,16 @@ function result() {
         }
     }
 }
+
+document.getElementById("reset").addEventListener("click", function () {
+    for(let x = 0; x < arraySpent.length; x++) {
+        arraySpent[x].value = "";
+        console.log(arraySpent[x].value)
+    }
+
+    for(let x = 0; x < arrayIncome.length; x++) {
+        arrayIncome[x].value = "";
+    }
+});
 
 
