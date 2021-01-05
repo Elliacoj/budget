@@ -78,6 +78,9 @@ document.getElementById("calcul").addEventListener("click", function () {
     result();
 });
 
+/**
+ * Function for change the result of budget
+ */
 function result() {
     total.innerHTML = "";
     let income = additionIncome();
@@ -85,6 +88,10 @@ function result() {
     total.innerHTML = income - spent + " €";
 }
 
+/**
+ * function for add different spent
+ * @returns {number}
+ */
 function additionSpent() {
     let additionSpentT = 0;
     for(let x = 0; x < arraySpent.length; x++) {
@@ -101,6 +108,11 @@ function additionSpent() {
     return additionSpentT
 }
 
+
+/**
+ * function for add different income
+ * @returns {number}
+ */
 function additionIncome() {
     let additionIncomeT = 0;
     for(let y = 0; y < arrayIncome.length; y++) {
