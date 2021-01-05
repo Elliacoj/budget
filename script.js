@@ -74,7 +74,7 @@ function result() {
     total.innerHTML = "";
     for(let x = 0; x < arraySpent.length; x++) {
         console.log(parseFloat(arraySpent[x].value))
-        if(((isNaN(arraySpent[x]) === true) && (arraySpent[x].length > 0))) {
+        if(((isNaN(arraySpent[x]).value === true) && (arraySpent[x].length > 0))) {
             alert("Un champ n'est pas valide");
         }
 
